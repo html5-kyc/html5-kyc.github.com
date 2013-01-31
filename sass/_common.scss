@@ -59,6 +59,7 @@ body {
     font-size: 13px;
     *font-size: 82%;
     line-height: 1.5;
+    background: #EEE8DD;
 }
 
 a {
@@ -176,19 +177,39 @@ hr { display: none; }
     position: relative;
     z-index: 50;
     width: 1024px;
-    margin: 60px auto 0;
+    margin: 0 auto;
     @extend .group;
 }
 
 /* --------------------------------------------------
     1. Header
 -------------------------------------------------- */
-
+.gHead {
+    height: 120px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #fafafa;
+    @include border-radius(5px);
+    @include box-shadow(0px 1px 3px rgba(0,0,0,0.4));
+}
 
 /* --------------------------------------------------
     2. Content
 -------------------------------------------------- */
+.gNav {
+    float: left;
+    width: 240px;
+    padding: 15px 10px;
+    background: #fff;
+    @include border-radius(5px);
+    @include box-shadow(0px 1px 3px rgba(0,0,0,0.4));
+}
 
+.main {
+    float: right;
+    width: 700px;
+    margin: 10px;
+}
 
 /* --------------------------------------------------
     3. Footer
@@ -217,7 +238,6 @@ hr { display: none; }
         height: 0;
     }
 }
-
 
 /* --------------------------------------------------
     90. Other
